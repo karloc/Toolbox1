@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="unit_arrays">
+        <item>Milje u kilometre</item>
+        <item>Kilometre u milje</item>
+        <item>Celzijuse u Kelvine</item>
+        <item>Kelvine u Celzijuse</item>
+        <item>Kilograme u funte</item>
+        <item>Funte u kilometre</item>
+
+    </string-array>
+
+</resources>

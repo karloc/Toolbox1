@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.karlo.toolbox">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tools"
+        android:logo="@mipmap/toolsab"
+        android:label="Alati"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="com.example.karlo.toolbox.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".calculator"
+                  android:label="Kalkulator"/>
+        <activity android:name=".StopWatch"
+                  android:label="Štoperica"/>
+        <activity android:name=".Flashlight"
+                  android:label="Svjetiljka"/>
+        <activity android:name=".Email"
+                  android:label="E-pošta"/>
+        <activity android:name=".Speed"
+                  android:label="Brzinomjer"/>
+        <activity android:name=".Location"
+                  android:label="Lokacija"/>
+        <activity android:name=".Recorder"
+                  android:label="Snimač zvuka"/>
+        <activity android:name=".Converter"
+                  android:label="Pretvarač"/>
+
+        <service android:name=".LocationService" />
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBF4b85UcEmLlOYOkrSmNHkp9C-PLfas0s"/>
+
+        <activity
+            android:name=".splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
